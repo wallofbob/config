@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run
+	dmenu_run -nb '#282c34' -sf '#fefefe' -sb '#668bd7' -nf '#fefefe'
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -133,3 +133,9 @@ alt + shift + {Left,Right}
 
 alt + {_,shift + } Tab
       bspc node -f {next,prev}.local.!hidden.window.!locked
+
+#launch edge
+super + e
+	microsoft-edge-beta
+
+
