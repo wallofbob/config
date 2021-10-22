@@ -1,5 +1,4 @@
 syntax on
-colors zellner
 filetype on
 set number
 set showmatch
@@ -12,5 +11,7 @@ filetype plugin indent on
 augroup Shape autocmd! autocmd VimLeave * set guicursor=a:hor90 augroup END
 set guicursor=
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
-
-
+source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/themes/airline.vim
+set termguicolors
+color dracula
