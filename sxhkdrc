@@ -8,8 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run -nb '#282c34' -sf '#fefefe' -sb '#668bd7' -nf '#fefefe'
-
+	rofi -show combi -sidebar-mode
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -42,9 +41,6 @@ super + g
 # state/flags
 #
 
-# set the window state
-super + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
 super + ctrl + {m,x,y,z}
@@ -138,4 +134,5 @@ alt + {_,shift + } Tab
 super + e
 	microsoft-edge-beta
 
-
+super + f
+	firefox
