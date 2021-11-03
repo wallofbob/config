@@ -14,21 +14,22 @@ bspc config gapless_monocle      true
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
-feh --bg-fill ~/Pictures/arch.png
+bspc config active_border_color = "99d1ce"
+feh --bg-fill ~/Downloads/gruvpaper.png	
 picom
 setxkbmap -layout dvorak
 killall polybar
-bspc config focused_border_color = "#5e81ac"
-bspc config focused_border_color        "#5e81ac" 
+#bspc config focused_border_color = "#99d1ce"
 # bspc config focused_border_color        "#ff3465" 
 # bspc config focused_border_color        "#ffffff" 
 # bspc config focused_border_color        "#504945"
-bspc config normal_border_color         "#1e0f2c"
-bspc config active_border_color         "#fb4934"
+#bspc config normal_border_color         "#1e0f2c"
+#bspc config active_border_color         "#99d1ce"
 # bspc config active_border_color         "#230B52"
-bspc config presel_feedback_color		"#4c566a"
+#bspc config presel_feedback_color		"#4c566a"
 polybar main --config=/usr/share/doc/polybar/dt_config
 rclone --vfs-cache-mode writes mount onedrive: ~/OneDrive
 
 # MPD daemon start (if no other user instance exists)
 [ ! -s ~/.config/mpd/pid ] && mpd
+xmodmap ~/.Xmodmap

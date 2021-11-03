@@ -118,7 +118,7 @@ super + {Left,Down,Up,Right}
 #volume
 
 {F1,F2}
-	/usr/bin/pactl set-sink-volume alsa_output.pci-0000_00_09.2.analog-stereo {-5%, +5%}
+	amixer set 'Master' {5%-, 5%+}
 
 {XF86AudioRaiseVolume, XF86AudioLowerVolume}
 	/usr/bin/pactl set-sink-volume alsa_output.pci-0000_00_09.2.analog-stereo {+5%, -5%}

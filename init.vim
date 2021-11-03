@@ -1,6 +1,7 @@
 syntax on
 filetype on
 set number
+
 set showmatch
 set incsearch
 set hlsearch
@@ -11,14 +12,31 @@ filetype plugin indent on
 augroup Shape autocmd! autocmd VimLeave * set guicursor=a:hor90 augroup END
 set guicursor=
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 0
-source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/themes/airline.vim
 set termguicolors
-color dracula
 nnoremap <C-S-tab> :tabp<CR>
 nnoremap <C-tab>   :tabn<CR>
-let NERDTreeShowHidden=1
-autocmd VimEnter * NERDTree | wincmd p
-" Exit Vim if NERDTree is the only window remaining in the only tab.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+call plug#begin()
 
+Plug 'tyru/open-browser.vim' " opens url in browser
+Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
+Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
+Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
+Plug 'whatyouhide/vim-gotham'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }
+Plug 'tpope/vim-fugitive'
+Plug 'morhetz/gruvbox'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
+
+
+call plug#end()
+
+let NERDTreeShowHidden=1
+colors gruvbox
+set noshowmode
