@@ -1,6 +1,6 @@
 syntax on
 filetype on
-set number
+set relativenumber
 
 set showmatch
 set incsearch
@@ -33,6 +33,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 
 call plug#end()
@@ -40,3 +41,4 @@ call plug#end()
 let NERDTreeShowHidden=1
 colors gruvbox
 set noshowmode
+nnoremap <C-t> :Telescope file_browser<cr>
