@@ -27,3 +27,4 @@ rclone --vfs-cache-mode writes mount onedrive: ~/OneDrive
 # MPD daemon start (if no other user instance exists)
 [ ! -s ~/.config/mpd/pid ] && mpd
 xmodmap ~/.Xmodmap
+dunst
