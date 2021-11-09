@@ -1,0 +1,152 @@
+19 b - no free ions
+20 
+21 - electrons moving straight from one to the other
+	electrons moving in all directions
+22 a) 20 coulombs
+	b) 600 coulombs
+
+23 a) 2A
+	b) 1A
+
+24 C
+25 a)b
+	b) i) 2.5
+		ii) 7.5
+26 a) 3j
+	b) 360 j
+27 a)40C
+	b) 
+
+28) 4 in series
+	b) 12j
+
+29) a) coulombs
+	b) amps
+	c) volts
+	d) volts
+	e) ohms
+30) a) 3ohm
+	b) 
+	c) 1.5 ohms
+	d) 4.5 ohms
+
+31)
+32) a) directly proportional
+	b) increases, but decreases after a while
+33) a) doubled
+	b) halved
+	c) doubled
+	d) halved
+34) b
+35 
+36) a) 2400 W
+	b) 5760 kJ
+	c) 14400 kJ
+	d) 8A
+38)V=400, power = 200W, =200j/s
+	b) 200*300=600000j
+39) 13A
+40) C
+41) 
+42) digital are 1/0 - either on or off, analog are sine waves - curved
+43) analog, digital, digital, analgo
+44) a) not
+	b) invert the current
+45) just the symbols
+46) a) 0
+	b) 1
+47) and gate
+
+----
+exam focus
+1. insulate teh thing, keep away from water
+	b) water conducts
+	c) too much current
+	d) break teh circuit if overload
+2) a) if one breaks no prob
+	b) 0.3A, 6A, 5.7A
+
+3. a)
+		i) current = 0.3A
+		ii) 5.4V
+		iii)3.6V
+	b) i) current = 0.2A
+		ii) 6.6V
+		iii) 2.4V
+	c) increases?
+4. a) i) down
+		ii) down
+		iii) up
+
+	b) 14 ohms
+
+---------------------------------------
+Electromagnetic effects
+1. B
+2) easy to transport, can be converted to dc later down the line. voltage can be stepped up and down, energy loss is minimal. 
+3. C
+4. a) 12V
+	b) step down
+5. more turns
+	increase strength of the magnet
+6) diagram
+7) downward - use fleming's left hand rule
+	b) 
+		i) ?
+		i) ?
+8) a) straight up
+	b) negative - moves left
+	c) politive - moves right
+	d) ??
+9) use right hand rule - currnt moves right
+10) a)north 
+	b)south
+	c) north
+11) b
+12) 80000/400000 = 0.2 A
+	b) e= i^2 r , = 0.6 j/s
+		1) pass alternating current
+		2) hit it a lot
+14. a)
+		i) B
+		ii)turn the wire the other way
+		iii) left
+	b) inside the solenoid
+		outside the solenoid
+15. a) 3A
+	b) 2.7A
+16. B
+17. 1. travel in straight lines
+	2. electrons
+	3. deflected by magnetic fields
+	4. heat where they fall
+18. up
+19. upwards 
+
+--------------
+Exam focus
+1. a) the coil has to switch on
+	b) forms electromagnet/solenoid
+	c) the 2 points come together - attracted by the current
+	d) avoid direct contact with a high-voltage circuit. 
+2. a) graph
+	b) yes
+	c) 0.75 A
+	d) 50N
+	e) stronger magnetic field, able to lift more load
+3. a) provide induced current to carbon brushes
+	b) sine wave
+	c) horizontal
+	d) alternating current
+4. a) split couple ensures that only one type of current - direct
+	b) 
+	c) more current
+	d) keep the torque from reversing deriction - rectification
+
+5. a) 400 turns
+	b) 200W
+	c) 0.2 A
+	d) more resistance - less efficiency
+	
+	
+

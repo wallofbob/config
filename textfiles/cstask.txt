@@ -1,0 +1,3 @@
+purpose - the problem being solved
+function - the behavior of a program during execution and is often described by how a user interacts with it
+

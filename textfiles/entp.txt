@@ -1,0 +1,41 @@
+Documents for a meeting:
+	1. Notice of a meeting
+		-> people who are required to attend the meeting need to be informed about the meeting - date, time and place
+		-> There is no agreed time prior to a meeting, vary from one enterprise to another
+		-> The notice should not be less than a week, not more than 3 weeks - but this is usually, 		it can vary
+	
+	2. Agenda for the meeting
+		-> the agenda should contain the following things:
+			-> apologies for absence - required folks can't attend, say sorry
+			-> minutes of the last meeting - notes, what each person said
+			-> matters arising from the minutes - ask the attendees if they would like to discuss something that happened in the previous meetings
+			-> any other business : the participants are allowed to discuss something important that's not on the agenda
+			-> Date and time of the next meeting - allow participants to choose a time that's convenient for everyone. 
+
+	3. Roles of the meeting
+			-> The chairperson: this is the head of the meeting - they make sure that all the items of the agenda get covered, allocate the time, set the ground rules, and make sure everyone participates in the meeting. 
+			-> Minute taker : this is the person who notes down a summary of the whole meeting, records who says what, what decisions have been reached, etc. Usually, there's no designated minute taker - this role rotates every meeting. However, it's possible for someone to do it every time. Again, this varies between businesses. Minutes are important because they: 
+						-> give a true and accurate account of what happened
+						-> are relatively brief, and give the main points of the meeting
+						-> are clear, and can be referred to in the future, to see what was agreed upon - prevents fights, establishes the base for future meetings. 
+						-> can provide information for those who were absent during the meeting
+
+
+
+
+--------
+Documents needed for presentations: 
+	1. Visual Aid
+		-> Slides can be used to give a visual summary of what's being covered
+		-> try to minimize the amount of words - people should focus on you talking instead of reading the aid. 
+		-> try to follow the 10-20-30 rule => no more than 10 slides, no more than 20 mins, no less than 30pt font
+
+	2. Handouts
+		-> Documents that support what is being discussed in the meeting
+		-> they're good because they 
+			-> prepare the participants by giving them prelim information, shortening the amount of info given during the presentation. 
+			-> allow the presenter to stop worrying about forgetting what they want to say - they can go on the data in the handout for the key points
+			-> allow the members of the audience to be well prepared to understand what's being discussed in the meeting, avoiding useless questions and speeding up the meeting. 
+	3. Formal reports
+		-> presents details and makes recommendations based on the info in the doc
+
