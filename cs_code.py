@@ -6,7 +6,7 @@ while playerno <2 or playerno> 5:
 
 playernames = []
 for i in range (playerno):
-    name = input("Enter the name of the player")
+    name = input("Enter the name of the player ")
     playernames.append(name)
 
 
@@ -22,7 +22,7 @@ print (f'the number of players is {playerno} \n the names of the players are {pl
 print (f'the par is {par}')
 
 check = input("is all the info right? enter y or n")
-if correct.lower() = n:
+if check.lower() == 'n':
     fix = int(input("enter 1 for number of players, 2 for names of players, 3 for number of holes, or 4 for the par"))
     if fix ==1:
         playerno=int(input("enter the number of players"))
@@ -35,5 +35,40 @@ if correct.lower() = n:
         holeno=int(input("enter the number of holes"))
     elif fix ==4:
         par = int("enter the par")
+
+print('fyi')
+for i in range(playerno):
+    print(f'player {i} is {playernames[i]}')
+
+# task 2
+scores = []
+for i in range (holeno):
+    print (f'hole {i}')
+    for i in range(playerno):
+        tempscore=int(input(f'{playernames[i]} input your stroke no.'))
+        tempscore2=int(input(f'do it again to confirm'))
+        while tempscore2 != tempscore or tempscore != tempscore2:
+            tempscore2=int(input(f'{playernames[i]} input your stroke no.'))
+        scores.append(tempscore2)
+        choice=input("do you want to see your scores? 'yes', 'no' or 'all' for all")
+        if choice == 'all':
+            print (scores)
+        elif choice =='yes':
+            numchoice=int(input("which playerno?"))
+            print (scores[numchoice])
+
+#task 3
+for i in range (playerno):
+    print (playernames[i])
+    if scores[i]-par <0:
+        print(f"the score is{abs(scores[i]-par)} below par")
+    elif scores[i]-par>0:
+        print(f"the score is{scores[i]-par} above par")
+    else:
+        print(f"the score is on par")
+
+winner = min(scores)
+print(f'the winner is {playernames[winner]}, and their score is {scores[winner]}')
+print(f'the average is {sum(scores)/len(scores)}')
 
 
