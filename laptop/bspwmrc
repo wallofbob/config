@@ -27,3 +27,4 @@ rclone --vfs-cache-mode writes mount onedrive: ~/OneDrive
 [ ! -s ~/.config/mpd/pid ] && mpd
 xmodmap ~/.Xmodmap
 dunst
+plank
