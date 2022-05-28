@@ -25,21 +25,21 @@ format-offset =
 
 [colors]
 ; Nord theme ============
-;background = #282c34
-;foreground = #abb2bf
-;alert = #bd2c40
-;volume-min = #a3be8c
-;volume-med = #ebcb8b
-;volume-max = #bf616a
+background = #282c34
+foreground = #abb2bf
+alert = #bd2c40
+volume-min = #a3be8c
+volume-med = #ebcb8b
+volume-max = #bf616a
 ; =======================
 
 ; Gotham theme ==========
-background = #0a0f14
-foreground = #99d1ce
-alert = #d26937
-volume-min = #2aa889
-volume-med = #edb443
-volume-max = #c23127
+;background = #0a0f14
+;foreground = #99d1ce
+;alert = #d26937
+;volume-min = #2aa889
+;volume-med = #edb443
+;volume-max = #c23127
 ; =======================
 
 ; INTRCPTR theme ============
@@ -324,7 +324,7 @@ font-5 = "Iosevka Nerd font:size=10;3"
 font-6 = "feather:size=12;3"
 
 
-modules-left = bspwm 
+modules-left = bspwm spotify 
 modules-center = battery 
 modules-right =  arrow1 wireless-network arrow2 memory2 arrow3 cpu2 arrow2  pulseaudio arrow3 date 
 
@@ -839,7 +839,7 @@ bar-empty = ─
 [module/battery]
 ;https://github.com/jaagr/polybar/wiki/Module:-battery
 type = internal/battery
-battery = BAT1
+battery = BAT0
 adapter = ACAD
 full-at = 99
 
@@ -1507,7 +1507,7 @@ format-connected-prefix-background = #8d62ad
 [module/wireless-network]
 ;https://github.com/jaagr/polybar/wiki/Module:-network
 type = internal/network
-interface = wlp2s0
+interface = wlp4s0
 interval = 3.0
 label-connected = %essid%
 
@@ -1657,11 +1657,25 @@ ramp-headphones-0 = 
 
 [module/pulseaudio]
 type = internal/pulseaudio
-sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+sink = alsa_output.pci-0000_05_00.6.analog-stereo
 use-ui-max = true
 interval = 5
 format-volume = vol <label-volume>
 format-volume-foreground = #fefefe
 format-volume-background = ${colors.background}
+
+[module/spotify]
+type=custom/script
+interval = 1
+format-prefix ="      " 
+format = <label>
+exec = python ~/.config/spotify_status.py -f '{artist}: {song}'
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+
+click-left =  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+scroll-up = dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+scroll-down = dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+
 ###############################################################################
 # vim:ft=dosini

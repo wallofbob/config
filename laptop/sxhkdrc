@@ -121,7 +121,7 @@ super + {Left,Down,Up,Right}
 	amixer set 'Master' {5%-, 5%+}
 
 {XF86AudioRaiseVolume, XF86AudioLowerVolume}
-	/usr/bin/pactl set-sink-volume alsa_output.pci-0000_00_09.2.analog-stereo {+5%, -5%}
+	/usr/bin/pactl set-sink-volume alsa_output.pci-0000_05_00.6.analog-stereo {+5%, -5%}
 
 # move focused window to the next workspace and then switch to that workspace
 alt + shift + {Left,Right}
@@ -137,10 +137,7 @@ super + e
 super + f
 	firefox
 
-# hide window
-super + v
-  bspc node -g hidden
-
-# unhide window
-super + shift + v
-  bspc node {,$(bspc query -N -n .hidden | tail -n1)} -g hidden=off
+# brightness ctl
+XF86MonBrightness{Up,Down}
+	brightnessctl s 5%{+/-}
+F5
