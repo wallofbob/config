@@ -326,7 +326,7 @@ font-6 = "feather:size=12;3"
 
 modules-left = bspwm spotify 
 modules-center = battery 
-modules-right =  arrow1 wireless-network arrow2 memory2 arrow3 cpu2 arrow2  pulseaudio arrow3 date 
+modules-right =  arrow1 wireless-network arrow2 memory2 arrow3 cpu2 arrow2  pulseaudio arrow3 date indtime 
 
 tray-detached = false
 tray-offset-x = 0
@@ -1507,7 +1507,7 @@ format-connected-prefix-background = #8d62ad
 [module/wireless-network]
 ;https://github.com/jaagr/polybar/wiki/Module:-network
 type = internal/network
-interface = wlp4s0
+interface = wlan0
 interval = 3.0
 label-connected = %essid%
 
@@ -1677,5 +1677,11 @@ click-left =  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org
 scroll-up = dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 scroll-down = dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 
+[module/indtime]
+type = custom/script
+exec = TZ=Asia/Calcutta date +"%H:%M:%S"
+interval = 1
+format-background = ${colors.foreground}
+format-foreground = ${colors.background}
 ###############################################################################
 # vim:ft=dosini
